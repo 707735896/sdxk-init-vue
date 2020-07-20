@@ -1,0 +1,101 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+  z-index: 2000;
+  background-color: #000;
+  opacity: 0.2;
+}
+
+.modal-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50.4%;
+  //height: 624px;
+  margin: 12vh auto 50px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  z-index: 2001;
+  .title-left {
+    width: 18%; //172
+    height: 100%;
+    background-image: url("../../assets/common/modal-left-bg.png");
+    float: left;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    .title {
+      width: 50px;
+      height: 100%;
+      margin-left: 26px;
+      padding-top: 20px;
+      box-sizing: border-box;
+      font-size: 50px;
+      letter-spacing: 8px;
+      color: #ffffff;
+      writing-mode: vertical-lr;
+      writing-mode: tb-lr; /*IE浏览器*/
+    }
+  }
+  .modal-content {
+    width: 82%;
+    height: 100%;
+    float: left;
+    $height: 40px;
+    .action-bar {
+      width: 100%;
+      height: $height;
+      .close-modal {
+        width: $height;
+        height: $height;
+        float: right;
+        margin-right: 6px;
+        cursor: pointer;
+        $imgW: 10px;
+        img {
+          width: $imgW;
+          margin: ($height - $imgW)/2;
+        }
+      }
+    }
+  }
+  .content-box {
+    padding: 36px;
+    overflow: auto;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    padding-right: 52px;
+    padding-top: 10px;
+    font-size: 14px;
+    width: 82%;
+    text-align: right;
+    height: 70px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    .submit-btn {
+      width: 100px;
+      color: #ffffff;
+      background-color: #E2151D;
+      border: none;
+      margin-left: 16px;
+    }
+    .cancel-btn {
+      width: 100px;
+      background-color: #ffffff;
+      color: #808080;
+    }
+    .cancel-btn:hover {
+      border: 1px solid #80b9c8 !important;
+    }
+  }
+}

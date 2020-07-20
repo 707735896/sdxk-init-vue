@@ -1,0 +1,79 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.2);
+  .alert-modal {
+    position: absolute;
+    width: 300px;
+    min-height: 200px;
+    padding: 20px 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 2px;
+    background-image: url("../../assets/alertModal/bg.png");
+    /*box-shadow: 0 2px 5px 0 rgba(152, 166, 179, 0.8);*/
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+
+    .modal-header {
+      padding: 16px 10px 0 10px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.9);
+      font-size: 20px;
+      font-weight: 600;
+      img {
+        position: relative;
+        top: 4px;
+      }
+    }
+    .modal-body {
+      min-height: 58px;
+      padding-top: 20px;
+      font-size: 14px;
+      text-align: center;
+      color: #333333;
+      box-sizing: content-box;
+    }
+    .modal-footer {
+      width: 152px;
+      margin: 9px auto 0 auto;
+      .btn-common {
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0;
+        border-radius: 4px;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .confirm {
+        @extend .btn-common;
+        color: rgb(255, 255, 255);
+        background-color: #FF7B10;
+        margin-left: 24px;
+        &:hover {
+          color: rgba(255, 255, 255, 0.9);
+          background: rgba(255, 123, 16, 0.8);
+        }
+      }
+      .cancel {
+        @extend .btn-common;
+        border: 1px solid #ADADAD;
+        background-color: #ffffff;
+        color: #808080;
+        &:hover {
+          border: 1px solid #FF7B10;
+          color: #FF7B10;
+        }
+      }
+    }
+  }
+}

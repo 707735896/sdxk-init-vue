@@ -1,0 +1,10 @@
+.idea
+.vscode
+node_modules/
+.project
+dist
+src/config/*.tmp
+src/config/env.js
+npm-debug.log
+package-lock.json
+

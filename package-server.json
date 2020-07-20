@@ -1,0 +1,10 @@
+{
+  "name": "oa-webserver",
+  "description": "",
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-urlrewrite": "^1.2.0"
+  }
+}
